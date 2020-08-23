@@ -1,0 +1,26 @@
+{
+  "name": "react-native-formatted-text",
+  "version": "0.1.1",
+  "description": "An easy way to dynamically add text format in react native",
+  "main": "index.js",
+  "repository": "https://github.com/MaXiao/react-native-formatted-text",
+  "author": "Xiao Ma",
+  "license": "MIT",
+  "keywords": [
+    "react-native",
+    "react native",
+    "mobile",
+    "style text",
+    "text style",
+    "format text",
+    "text format",
+    "attributed string",
+    "spannable text"
+  ],
+  "bugs": {
+    "url": "https://github.com/MaXiao/react-native-formatted-text/issues"
+  },
+  "devDependencies": {
+    "metro-react-native-babel-preset": "^0.63.0"
+  }
+}

@@ -7,7 +7,9 @@ An easy way to dynamically add text format in react native
 * Automatically detect and handle link or email in the string 
 
 ## Example
-![](assets/example.png) [examples/App.js](examples/App.js)
+![](assets/example.png) 
+
+[examples/App.js](examples/App.js)
 
 ## Installation
 If using yarn:

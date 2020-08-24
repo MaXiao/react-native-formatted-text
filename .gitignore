@@ -9,3 +9,7 @@ dist
 
 # Dependency directory
 node_modules
+
+# Personal setup
+.DS_Store
+.idea

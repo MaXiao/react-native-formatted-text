@@ -86,7 +86,7 @@ Both `ranges` and `matches` accept Object for a single lookup or array for multi
 
 ## Contributing
 
-Pull requests are always welcome! Feel free to open a new GitHub issue for any changes that can be made.
+Pull requests are welcome! Open a new GitHub issue for any bug or suggestion.
 
 ## Author
 

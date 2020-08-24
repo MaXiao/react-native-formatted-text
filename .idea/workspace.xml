@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c711e339-f995-4e97-8390-2f22a1dac32e" name="Default Changelist" comment="" />
+    <list default="true" id="c711e339-f995-4e97-8390-2f22a1dac32e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/examples/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FormattedText/FormattedText.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/FormattedText/FormattedText.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,7 +48,7 @@
       <workItem from="1597852114531" duration="10000" />
       <workItem from="1598104903529" duration="168000" />
       <workItem from="1598106839855" duration="1485000" />
-      <workItem from="1598156165093" duration="7693000" />
+      <workItem from="1598156165093" duration="13475000" />
     </task>
     <servers />
   </component>
@@ -52,10 +56,15 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="304" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598157354194">
-      <screen x="0" y="23" width="1680" height="944" />
+    <state x="304" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598234496651">
+      <screen x="0" y="23" width="1680" height="947" />
     </state>
     <state x="304" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.944@0.23.1680.944" timestamp="1598157354194" />
+    <state x="304" y="155" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.947@0.23.1680.947" timestamp="1598234496651" />
+    <state x="561" y="298" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598234057508">
+      <screen x="0" y="23" width="1680" height="947" />
+    </state>
+    <state x="561" y="298" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.947@0.23.1680.947" timestamp="1598234057508" />
     <state width="1659" height="247" key="GridCell.Tab.0.bottom" timestamp="1598136988177">
       <screen x="0" y="23" width="1680" height="944" />
     </state>

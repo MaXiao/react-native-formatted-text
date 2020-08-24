@@ -16,12 +16,12 @@ const App: () => React$Node = () => {
       <View style={styles.body}>
         <FormattedText
           style={styles.text}
-          formats={[
-            {start: 55, end: 62, style: styles.prop},
-            {start: 77, end: 82, style: styles.param},
-            {start: 88, end: 92, style: styles.param},
+          ranges={[
+            {start: 56, end: 62, style: styles.prop},
+            {start: 78, end: 83, style: styles.param},
+            {start: 88, end: 91, style: styles.param},
           ]}>
-          The most generic way to use FormattedText is providing formats prop to
+          The most generic way to use FormattedText is to provide ranges prop to
           define start and end of the text.
         </FormattedText>
         <FormattedText
@@ -32,7 +32,7 @@ const App: () => React$Node = () => {
             {regex: /regex/g, style: styles.param},
           ]}>
           One can also utilize matches prop and declare a text or regex to find
-          words need to be formatted.
+          words to be formatted.
         </FormattedText>
         <FormattedText
           style={styles.text}
@@ -41,8 +41,8 @@ const App: () => React$Node = () => {
             {type: FORMATTED_LINK_MATCH_TYPE.URL},
             {type: FORMATTED_LINK_MATCH_TYPE.EMAIL},
           ]}>
-          There is a convenient enabledLinkTypes to automatically detect links
-          like https://www.google.com or email addresses like hi@email.com
+          There is a convenient enabledLinkTypes prop to automatically detect
+          links like https://www.google.com or email addresses like hi@email.com
         </FormattedText>
         <FormattedText
           style={styles.text}

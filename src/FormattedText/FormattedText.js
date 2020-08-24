@@ -3,9 +3,9 @@ import { Text, StyleSheet, Linking } from "react-native";
 import FORMATTED_LINK_MATCH_TYPE from "./FormattedLinkMatchType";
 
 /*
- * formats: object or array in the form of {start:, end:, style:}
+ * ranges: object or array in the form of {start:, end:, style:}
  * matches: object or array in the form of {text:/regex:, style:}
- * enabledLinkTypes: array of LINK_MATCH_TYPE
+ * enabledLinkTypes: array of FORMATTED_LINK_MATCH_TYPE
  *
  * */
 
@@ -21,13 +21,13 @@ const openUrl = url => {
 
 const FormattedText = ({
   children,
-  formats = [],
+  ranges = [],
   matches = [],
   enabledLinkTypes = [],
   ...props
 }) => {
-  if (formats && !Array.isArray(formats)) {
-    formats = [formats];
+  if (ranges && !Array.isArray(ranges)) {
+    ranges = [ranges];
   }
   if (matches && !Array.isArray(matches)) {
     matches = [matches];
@@ -65,7 +65,7 @@ const FormattedText = ({
     matches.push(m);
   }
 
-  // construct formats from matches
+  // construct ranges from matches
   matches.forEach(match => {
     // generalize text param to regex
     if (match.text) {
@@ -73,7 +73,7 @@ const FormattedText = ({
     }
     if (match.regex) {
       while ((m = match.regex.exec(children)) != null) {
-        formats.push({
+        ranges.push({
           start: m.index,
           end: m.index + m[0].length,
           style: match.style,
@@ -87,12 +87,12 @@ const FormattedText = ({
     }
   });
 
-  // remove formats that don't have enough meta data
-  const filteredFormats = formats.filter(
+  // remove ranges that don't have enough meta data
+  const filteredFormats = ranges.filter(
     s => s.hasOwnProperty("start") && s.hasOwnProperty("end")
   );
 
-  if (formats.length === 0) {
+  if (ranges.length === 0) {
     console.warn("no format found");
     return <Text {...props}>{children}</Text>;
   }

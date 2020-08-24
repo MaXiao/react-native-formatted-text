@@ -72,6 +72,7 @@ const FormattedText = ({
       match.regex = new RegExp("\\b" + match.text + "\\b", "g");
     }
     if (match.regex) {
+      let m;
       while ((m = match.regex.exec(children)) != null) {
         ranges.push({
           start: m.index,

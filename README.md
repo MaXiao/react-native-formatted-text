@@ -59,7 +59,9 @@ Both `ranges` and `matches` accept Object for a single lookup or array for multi
 | ---------------- | ----------------------------------------------- | ------------ | --------------- |
 | ranges           | Declares matching range                         | []           | Array or Object of Range |
 | matches          | Provides text or regex value for string matches | []           | Array or Object of Match |
-| enabledLinkTypes | Enables automatic link checking                 | []           | Array or Object of LinkMatch |
+| enabledLinkTypes*| Enables automatic link checking                 | []           | Array or Object of LinkMatch |
+
+\* This feature uses naive regex to match url/email by design. If a more comprehensive matching is desired, use `matches` instead. One can also use more specialized libraries as [react-native-hyperlink](https://github.com/obipawan/react-native-hyperlink).
 
 ### Range Object
 | Name        | Description                                         |  Type        |  

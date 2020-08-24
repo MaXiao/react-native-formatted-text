@@ -25,13 +25,13 @@ npm i react-native-formatted-text
 ```
 
 ## Usage
-```
+```jsx
 import { FormattedText } from 'react-native-formatted-text';
 ```
 
 Simply wrap the text in `FormattedText` tags. You may use `ranges` prop and to declare `start` and `end` index of the text.
 
-```
+```jsx
 <FormattedText ranges={{start: 6, end: 12, style: {color: 'red'}}}>
   Hello, World!
 </FormattedText>
@@ -39,7 +39,7 @@ Simply wrap the text in `FormattedText` tags. You may use `ranges` prop and to d
 
 Another way is to use `matches` and provide a `text` or `regex` value.
 
-```
+```jsx
 <FormattedText
   matches={[
     {text: 'Hello', style: {color: 'red'}},

@@ -1,6 +1,6 @@
 {
   "name": "react-native-formatted-text",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "An easy way to dynamically add text format in react native",
   "main": "index.js",
   "repository": "https://github.com/MaXiao/react-native-formatted-text",

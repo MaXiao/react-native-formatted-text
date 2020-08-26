@@ -150,10 +150,7 @@ const FormattedText = ({
     );
 
     // add end of string if needed
-    if (
-      index === sortedFormats.length - 1 &&
-      format.end < children.length - 1
-    ) {
+    if (index === sortedFormats.length - 1 && format.end < children.length) {
       result.push(children.substring(format.end, children.length));
     }
   });
